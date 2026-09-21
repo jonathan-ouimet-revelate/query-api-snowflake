@@ -1,0 +1,23 @@
+{
+  "contract_confirmed": true,
+  "allowed_hosts": ["test002.gaas.blue"],
+  "page_size": 20,
+  "max_pages_per_invocation": 100,
+  "invocation_budget_seconds": 200,
+  "max_response_bytes": 8388608,
+  "new_run_interval_seconds": 3600,
+  "post_is_read_only": false,
+  "request": {
+    "url": "https://test002.gaas.blue/api/query/v4/query-paginated/GEOSPATIAL_625_SUPERF",
+    "method": "GET",
+    "pagination_location": "params",
+    "page_parameter": "page",
+    "size_parameter": "size",
+    "params": {},
+    "json": {}
+  },
+  "auth": {
+    "mode": "basic",
+    "username": "jonouimet@protonmail.com"
+  }
+}

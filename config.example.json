@@ -1,0 +1,30 @@
+{
+  "contract_confirmed": false,
+  "allowed_hosts": ["api.example.invalid"],
+  "page_size": 100,
+  "max_pages_per_invocation": 100,
+  "invocation_budget_seconds": 200,
+  "max_response_bytes": 8388608,
+  "new_run_interval_seconds": 3600,
+  "post_is_read_only": false,
+  "request": {
+    "url": "https://api.example.invalid/query",
+    "method": "GET",
+    "pagination_location": "params",
+    "page_parameter": "page",
+    "size_parameter": "size",
+    "params": {},
+    "json": {}
+  },
+  "auth": {
+    "mode": "direct_pat",
+    "header": "Authorization",
+    "prefix": "Bearer ",
+    "exchange_url": "https://api.example.invalid/auth/token",
+    "exchange_body": {},
+    "pat_json_field": "pat",
+    "pat_header": null,
+    "pat_prefix": "",
+    "token_field": "access_token"
+  }
+}

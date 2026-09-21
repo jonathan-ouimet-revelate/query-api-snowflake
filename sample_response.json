@@ -1,0 +1,108 @@
+{
+    "content":
+    [
+        {
+            "polygon_id": "SUP-0011",
+            "layer": "superficial",
+            "unit_name": "Alluvium",
+            "lithology": "Clay, silt, sand and gravel, river-deposited",
+            "era": "Quaternary",
+            "period": "Quaternary",
+            "epoch": "Holocene",
+            "map_colour_hex": "#C9D6A0",
+            "map_scale": "1:625,000",
+            "centroid_lon": -4.1944,
+            "centroid_lat": 53.75,
+            "geometry_wkt": "POLYGON((-4.517222222222221 53.365, -3.8716666666666666 53.365, -3.8716666666666666 54.135, -4.517222222222221 54.135, -4.517222222222221 53.365))",
+            "geom": "POLYGON((-4.51722222222222 53.365, -3.87166666666667 53.365, -3.87166666666667 54.135, -4.51722222222222 54.135, -4.51722222222222 53.365))"
+        },
+        {
+            "polygon_id": "SUP-0002",
+            "layer": "superficial",
+            "unit_name": "Alluvium",
+            "lithology": "Clay, silt, sand and gravel, river-deposited",
+            "era": "Quaternary",
+            "period": "Quaternary",
+            "epoch": "Holocene",
+            "map_colour_hex": "#C9D6A0",
+            "map_scale": "1:625,000",
+            "centroid_lon": -6.0389,
+            "centroid_lat": 53.75,
+            "geometry_wkt": "POLYGON((-6.361666666666666 53.365, -5.716111111111111 53.365, -5.716111111111111 54.135, -6.361666666666666 54.135, -6.361666666666666 53.365))",
+            "geom": "POLYGON((-6.36166666666667 53.365, -5.71611111111111 53.365, -5.71611111111111 54.135, -6.36166666666667 54.135, -6.36166666666667 53.365))"
+        },
+        {
+            "polygon_id": "SUP-0029",
+            "layer": "superficial",
+            "unit_name": "Alluvium",
+            "lithology": "Clay, silt, sand and gravel, river-deposited",
+            "era": "Quaternary",
+            "period": "Quaternary",
+            "epoch": "Holocene",
+            "map_colour_hex": "#C9D6A0",
+            "map_scale": "1:625,000",
+            "centroid_lon": 0.4167,
+            "centroid_lat": 51.55,
+            "geometry_wkt": "POLYGON((0.09388888888888908 51.165, 0.7394444444444448 51.165, 0.7394444444444448 51.935, 0.09388888888888908 51.935, 0.09388888888888908 51.165))",
+            "geom": "POLYGON((0.0938888888888891 51.165, 0.739444444444445 51.165, 0.739444444444445 51.935, 0.0938888888888891 51.935, 0.0938888888888891 51.165))"
+        },
+        {
+            "polygon_id": "SUP-0014",
+            "layer": "superficial",
+            "unit_name": "Alluvium",
+            "lithology": "Clay, silt, sand and gravel, river-deposited",
+            "era": "Quaternary",
+            "period": "Quaternary",
+            "epoch": "Holocene",
+            "map_colour_hex": "#C9D6A0",
+            "map_scale": "1:625,000",
+            "centroid_lon": -4.1944,
+            "centroid_lat": 58.15,
+            "geometry_wkt": "POLYGON((-4.517222222222221 57.765, -3.8716666666666666 57.765, -3.8716666666666666 58.535000000000004, -4.517222222222221 58.535000000000004, -4.517222222222221 57.765))",
+            "geom": "POLYGON((-4.51722222222222 57.765, -3.87166666666667 57.765, -3.87166666666667 58.535, -4.51722222222222 58.535, -4.51722222222222 57.765))"
+        },
+        {
+            "polygon_id": "SUP-0022",
+            "layer": "superficial",
+            "unit_name": "Alluvium",
+            "lithology": "Clay, silt, sand and gravel, river-deposited",
+            "era": "Quaternary",
+            "period": "Quaternary",
+            "epoch": "Holocene",
+            "map_colour_hex": "#C9D6A0",
+            "map_scale": "1:625,000",
+            "centroid_lon": -2.35,
+            "centroid_lat": 58.15,
+            "geometry_wkt": "POLYGON((-2.6727777777777777 57.765, -2.0272222222222216 57.765, -2.0272222222222216 58.535000000000004, -2.6727777777777777 58.535000000000004, -2.6727777777777777 57.765))",
+            "geom": "POLYGON((-2.67277777777778 57.765, -2.02722222222222 57.765, -2.02722222222222 58.535, -2.67277777777778 58.535, -2.67277777777778 57.765))"
+        }
+    ],
+    "empty": false,
+    "first": true,
+    "last": false,
+    "number": 0,
+    "numberOfElements": 5,
+    "pageable":
+    {
+        "offset": 0,
+        "pageNumber": 0,
+        "pageSize": 5,
+        "paged": true,
+        "sort":
+        {
+            "empty": true,
+            "sorted": false,
+            "unsorted": true
+        },
+        "unpaged": false
+    },
+    "size": 5,
+    "sort":
+    {
+        "empty": true,
+        "sorted": false,
+        "unsorted": true
+    },
+    "totalElements": 34,
+    "totalPages": 7
+}
