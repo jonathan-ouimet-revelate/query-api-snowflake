@@ -1,12 +1,6 @@
-# Query API to Snowflake Starter
+# Revelate Query API to Snowflake Quickstart
 
-## SE Deployment Status (2026-09-21)
-
-Test objects are deployed in JOUIMET_AWS1 under QUERY_API_STARTER.INGEST, owned by SYSADMIN. QUERY_API_STARTER_EAI permits egress only to test002.gaas.blue. The hourly QUERY_API_POLL task remains suspended. The deployed configuration is config.se.json (Basic auth, page size 20), with contract_confirmed=true.
-
-The corrected endpoint is https://test002.gaas.blue/api/query/v4/query-paginated/GEOSPATIAL_625_SUPERF. Using the user-provisioned Snowflake runtime secret, a manual extraction completed successfully: 72 records across four pages (20, 20, 20, 12). Run ID: 23b867e6-1288-461d-9b3d-eb3ed87e6e4a. Expected and loaded totals match, LATEST_RECORDS contains 72 records, and the lock was released. The prior wrong-product run remains ABANDONED with zero records. The CHECK_API_ACCESS diagnostic now reads the endpoint from INGEST_CONFIG instead of retaining the obsolete product name. Offline regression tests passed (37 tests).
-
-This export includes setup.sql generated from the working config.se.json configuration, plus the generic config.example.json template. The deployed CHECK_API_ACCESS diagnostic is not required for ingestion and is not included in the setup worksheet. Manual live ingestion is verified; recurring scheduling is not enabled. Source snapshot consistency under concurrent source changes still depends on the provider's guarantees.
+This repository has a variety of Snowflake objects defined that allow for the repeated ingestion of data from a Revelate Query API product. It requires a Revelate user and personal access token that has an active order for a query view product. With that information added in Snowflake, and network access rules in place, Snowflake can reach out to the api for the product, authenticate, and pull the data in, in a paginated fashion.
 
 ## Files
 
@@ -146,8 +140,6 @@ python3 build_bundle.py --config config.se.json --output "$HOME/Desktop/query-ap
 The builder includes only explicitly named bundle files, refuses to overwrite an existing ZIP, and checks ZIP integrity. It does not scan arbitrary request settings for accidentally inserted secrets: NEVER add credentials to the project before packaging.
 
 The offline suite covers direct/exchange authentication shapes, response validation, pagination beyond an invocation cap, resume after failure, bounded retries, Retry-After, redirection blocking, malformed/oversized responses, transaction rollback simulation, and incomplete-run isolation. The worksheet embeds the same ingest.py source.
-
-The SE deployment statements executed successfully, and a manual live extraction loaded all 72 records from four pages. Concurrent invocation and source-mutation tests have not been performed. The exported setup.sql uses config.se.json but an inert secret placeholder; do not rerun it against existing SE objects. This is a source/deployment bundle, not a database backup: loaded records and real credentials are excluded.
 
 ## References
 
