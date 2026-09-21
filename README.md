@@ -1,8 +1,10 @@
 # Revelate Query API to Snowflake Quickstart
 
-This repository has a variety of Snowflake objects defined that allow for the repeated ingestion of data from a Revelate Query API product. It requires a Revelate user and personal access token that has an active order for a query view product. With that information added in Snowflake, and network access rules in place, Snowflake can reach out to the api for the product, authenticate, and pull the data in, in a paginated fashion.
+This repository has a variety of Snowflake objects defined that allow for the repeated ingestion of data from a Revelate Query API product. It requires a Revelate user and personal access token that has an active order for a query view product. With that information added in Snowflake, and network access rules in place, Snowflake can reach out to the api for the product, authenticate, and pull the data in, in a paginated fashion. We assume in this project that the consumer only has access to Snowflake, and no other technologies to support the transfer.
 
-### Before beginning to use this repository, please note that there are other options for getting data into Snowflake using Revelate. Another method for accomplishing the same thing is using Scheduled Query API extractions in Revelate, whereby files are generated and sent to a bucket endpoint. This assumes the consumer has access to a bucket that they can attach to their Snowflake instance as a `stage` and then read the generated files in to Snowflake in a similar fashion using a recurring task. This second option requires a slightly bit more configuration on the Revelate side, but slightly less on the Snowflake side, and does require access to a bucket for both read/write operations, preferably with the ability to manipulate bucket permissions.
+Before beginning to use this repository, please note that there are other options for getting data into Snowflake using Revelate. Another method for accomplishing the same thing is using Scheduled Query API extractions in Revelate, whereby files are generated and sent to a bucket endpoint. This assumes the consumer has access to a bucket that they can attach to their Snowflake instance as a `stage` and then read the generated files in to Snowflake in a similar fashion using a recurring task. 
+
+This second option requires a slightly bit more configuration on the Revelate side, but slightly less on the Snowflake side, and does require access to a bucket for both read/write operations, preferably with the ability to manipulate bucket permissions.
 
 ## Files
 
